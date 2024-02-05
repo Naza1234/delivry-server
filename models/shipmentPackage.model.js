@@ -6,7 +6,7 @@ const shipmentPackageSchema = new mongoose.Schema({
         ref: 'Shipment'
     },
     productName: String,
-    productWeight: Number,
+    productWeight:String,
     productSize: String
 });
 
