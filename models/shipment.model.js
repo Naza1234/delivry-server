@@ -24,7 +24,14 @@ const shipmentSchema = new mongoose.Schema({
         email: String
     },
     trackingId: String,
-    currentLocation: String
+    currentLocation: {
+        type: String,
+        default: "loading..."
+    },
+    currentLocationMap: {
+        type: String,
+        default: "loading..."
+    },
 });
 
 const Shipment = mongoose.model('Shipment', shipmentSchema);
