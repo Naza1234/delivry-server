@@ -8,7 +8,7 @@ const shipmentPackageSchema = new mongoose.Schema({
     productName: String,
     productWeight:String,
     productSize: String
-}{
+},{
     timestamps: true
 });
 
