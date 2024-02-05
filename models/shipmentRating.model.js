@@ -23,6 +23,8 @@ const shipmentRatingSchema = new mongoose.Schema({
         phone: String,
         email: String
     },
+}{
+    timestamps: true
 });
 
 const ShipmentRating = mongoose.model('ShipmentRating', shipmentRatingSchema);

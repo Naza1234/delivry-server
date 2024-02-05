@@ -32,6 +32,8 @@ const shipmentSchema = new mongoose.Schema({
         type: String,
         default: "loading..."
     },
+}{
+    timestamps: true
 });
 
 const Shipment = mongoose.model('Shipment', shipmentSchema);
