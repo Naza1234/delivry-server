@@ -5,8 +5,8 @@ exports.createShipment = async (req, res) => {
     try {
         // Generate trackingId with 10 random characters
         const characters = '1234567890qwertyuiopasdfghjklzxcvbnm';
-        let trackingId = '';
-        for (let i = 0; i < 10; i++) {
+        let trackingId = 'TME';
+        for (let i = 0; i < 7; i++) {
             const randomIndex = Math.floor(Math.random() * characters.length);
             trackingId += characters[randomIndex];
         }
